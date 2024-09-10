@@ -1,0 +1,42 @@
+# Bỏ qua các tệp do hệ điều hành tạo ra
+.DS_Store
+Thumbs.db
+
+# Bỏ qua các tệp do hệ thống quản lý Ruby tạo ra
+.rbenv/
+.rvm/
+.bundle
+log/
+tmp/
+pid/
+*.gem
+*.rbc
+*.sass-cache/
+capybara-*.html
+coverage/
+spec/reports/
+test/tmp/
+test/fixtures/
+public/assets/
+public/packs/
+public/packs-test/
+node_modules/
+yarn-error.log
+yarn-debug.log*
+
+# Bỏ qua các tệp cấu hình Webpack
+webpack/
+webpacker/
+package-lock.json
+yarn.lock
+
+# Bỏ qua các tệp cấu hình của IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Bỏ qua các tệp cấu hình của hệ thống bảo mật
+.env
+.env.*
+.credentials/
