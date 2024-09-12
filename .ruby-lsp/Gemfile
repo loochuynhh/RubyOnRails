@@ -3,4 +3,5 @@
 
 eval_gemfile(File.expand_path("../Gemfile", __dir__))
 gem "ruby-lsp", require: false, group: :development
+gem "debug", require: false, group: :development, platforms: :mri
 gem "ruby-lsp-rails", require: false, group: :development
