@@ -21,5 +21,5 @@ Rails.application.routes.draw do
   # root "application#hello"
   # root 'application#home'
   # get "/bye", to: "application#bye"
-  root "application#hello"
+  root 'application#hello'
 end

@@ -9,7 +9,7 @@ def yeller(chars)
   chars.map(&:upcase).join
 end
 
-puts yeller(['o', 'l', 'd'])  
+puts yeller(['o', 'l', 'd'])
 
 # Exe 3
 def random_subdomain
@@ -23,7 +23,7 @@ def shuffle_string(str)
   str.chars.shuffle.join
 end
 
-puts shuffle_string("example")
+puts shuffle_string('example')
 
 # Hash and Symbol Exercise
 # Exe 1
@@ -38,9 +38,9 @@ translations.each do |key, value|
 end
 
 # Exe 2
-person1 = { first: 'John', last: 'Doe' }
-person2 = { first: 'Jane', last: 'Smith' }
-person3 = { first: 'Baby', last: 'Doe' }
+person1 = {first: 'John', last: 'Doe'}
+person2 = {first: 'Jane', last: 'Smith'}
+person3 = {first: 'Baby', last: 'Doe'}
 
 params = {
   father: person1,
@@ -48,22 +48,22 @@ params = {
   child: person3
 }
 
-puts params[:father][:first]  
-puts params[:mother][:last]   
-puts params[:child][:first]   
+puts params[:father][:first]
+puts params[:mother][:last]
+puts params[:child][:first]
 
 # Exe 3
 user_info = {
   name: 'Your Name',
   email: 'your.email@example.com',
-  password_digest: ('a'..'z').to_a.sample(16).join  
+  password_digest: ('a'..'z').to_a.sample(16).join
 }
 
 puts user_info
 
 # Exe 3
-hash1 = { a: 1, b: 2 }
-hash2 = { b: 3, c: 4 }
+hash1 = {a: 1, b: 2}
+hash2 = {b: 3, c: 4}
 
 merged_hash = hash1.merge(hash2)
 
@@ -74,7 +74,7 @@ range_literal = 1..10
 
 range_new = Range.new(1, 10)
 
-puts range_literal == range_new  
+puts range_literal == range_new
 
 # Class Exercise
 class Word < String
@@ -83,12 +83,12 @@ class Word < String
   end
 
   def palindrome_without_self?
-    self == reverse   
+    self == reverse
   end
 end
 
-w = Word.new("racecar")
-puts "Exer Class 1: #{w.palindrome_with_self?}"   
+w = Word.new('racecar')
+puts "Exer Class 1: #{w.palindrome_with_self?}"
 puts "Exer Class 2: #{w.palindrome_without_self?}"
 
 # Modifying built-in classes Exer
@@ -97,9 +97,9 @@ def palindrome?(string)
   string.downcase == string.downcase.reverse
 end
 
-puts palindrome?("racecar")
-puts palindrome?("onomatopoeia")
-puts palindrome?("Malayalam")
+puts palindrome?('racecar')
+puts palindrome?('onomatopoeia')
+puts palindrome?('Malayalam')
 
 # Exer 2
 class String
@@ -108,15 +108,15 @@ class String
   end
 end
 
-puts "hello".shuffle
+puts 'hello'.shuffle
 
 # Exer 3
 class String
-  def shuffle
+  def shuffle2
     chars.shuffle.join
   end
 end
 
-puts "hello".shuffle
+puts 'hello'.shuffle
 
 # Controller Class Exer
