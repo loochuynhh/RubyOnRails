@@ -3033,3 +3033,95 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 15ms (Views: 9.1ms | ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 0.4ms)
 
 
+Started GET "/users/1" for 127.0.0.1 at 2024-09-16 10:28:11 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 73.0ms | GC: 15.5ms)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 75.8ms | GC: 15.5ms)
+Completed 200 OK in 97ms (Views: 78.2ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 15.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2024-09-16 10:29:37 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 402.5ms | GC: 41.3ms)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 403.8ms | GC: 41.3ms)
+Completed 200 OK in 407ms (Views: 404.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 41.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2024-09-16 10:29:39 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 8.8ms | GC: 0.3ms)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | GC: 0.3ms)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "[FILTERED]"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Update (0.2ms)[0m  [1m[33mUPDATE "users" SET "email" = ?, "updated_at" = ?, "password_digest" = ? WHERE "users"."id" = ?[0m  [["email", "[FILTERED]"], ["updated_at", "2024-09-16 03:59:11.900731"], ["password_digest", "[FILTERED]"], ["id", 1]]
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/users/1" for 127.0.0.1 at 2024-09-16 10:59:31 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 462.3ms | GC: 34.7ms)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 464.7ms | GC: 34.7ms)
+Completed 200 OK in 485ms (Views: 466.7ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 34.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2024-09-16 10:59:51 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 6.9ms | GC: 0.6ms)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | GC: 0.6ms)
+Completed 200 OK in 22ms (Views: 9.5ms | ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 7.3ms)
+
+
