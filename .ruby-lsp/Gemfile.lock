@@ -77,6 +77,7 @@ GEM
     autoprefixer-rails (10.4.19.0)
       execjs (~> 2)
     base64 (0.2.0)
+    bcrypt (3.1.20)
     bigdecimal (3.1.8)
     bindex (0.8.1)
     bootsnap (1.18.4)
@@ -245,7 +246,7 @@ GEM
       prism (~> 1.0)
       rbs (>= 3, < 4)
       sorbet-runtime (>= 0.5.10782)
-    ruby-lsp-rails (0.3.13)
+    ruby-lsp-rails (0.3.14)
       ruby-lsp (>= 0.17.12, < 0.18.0)
     ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
@@ -311,6 +312,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bcrypt
   bootsnap
   bootstrap-sass
   capybara
