@@ -316,7 +316,6 @@ DEPENDENCIES
   bcrypt
   bootsnap
   bootstrap-sass
-  byebug
   capybara
   debug
   htmlbeautifier
