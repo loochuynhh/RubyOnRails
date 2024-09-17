@@ -5,18 +5,17 @@ class UsersController < ApplicationController
       flash[:success] = 'Welcome to the Sample App!'
       redirect_to @user
     else
+      flash[:error] = 'There was an error creating your account. Please check the form and try again.'
       render 'new'
     end
   end
 
   def new
     @user = User.new
-    # debugger
   end
 
   def show
     @user = User.find(params[:id])
-    # debugger
   end
 
   private
