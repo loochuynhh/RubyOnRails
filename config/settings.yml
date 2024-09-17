@@ -1,5 +1,6 @@
 defaults: &defaults
-  gravatar_size: 100
+  small_gravatar_size: 80
+  large_gravatar_size: 100
 
 development:
   <<: *defaults
