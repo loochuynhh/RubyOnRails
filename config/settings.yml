@@ -1,0 +1,11 @@
+defaults: &defaults
+  gravatar_size: 100
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

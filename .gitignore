@@ -44,7 +44,4 @@ storage/*.sqlite3-*
 
 config/master.key
 .byebug_history
-config/settings.yml
-config/settings/*.yml
-config/environments/*.yml
-log/test.log
+log/
