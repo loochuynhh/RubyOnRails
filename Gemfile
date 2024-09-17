@@ -33,6 +33,8 @@ gem 'bcrypt'
 
 gem 'byebug', group: [:development, :test]
 
+gem 'config'
+
 gem 'rails-ujs'
 
 gem 'importmap-rails'
