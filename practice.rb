@@ -120,3 +120,15 @@ end
 puts 'hello'.shuffle
 
 # Controller Class Exer
+
+
+# require 'digest'
+
+# email = "lochuynhhsb@gmail.com".downcase
+
+# gravatar_id = Digest::MD5.hexdigest(email)
+
+# puts gravatar_id
+
+
+# d19d6c67018098f081357e2ba46e7edf
