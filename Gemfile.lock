@@ -301,7 +301,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt
   bootsnap
-  bootstrap-sass
+  bootstrap-sass (~> 3.4.1)
   byebug
   capybara
   htmlbeautifier

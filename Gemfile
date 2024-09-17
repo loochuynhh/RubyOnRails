@@ -23,7 +23,7 @@ gem 'webpacker'
 # gem "kredis"
 gem 'sassc-rails'
 
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.4.1'
 
 gem 'htmlbeautifier'
 

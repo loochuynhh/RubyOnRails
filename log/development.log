@@ -2317,3 +2317,788 @@ Processing by StaticPagesController#help as HTML
 Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2024-09-17 09:30:49 +0700
+  
+ActiveRecord::DuplicateMigrationNameError (
+
+Multiple migrations have the name CreateUsers.
+
+):
+  
+activerecord (7.2.1) lib/active_record/migration.rb:1562:in `validate'
+activerecord (7.2.1) lib/active_record/migration.rb:1432:in `initialize'
+activerecord (7.2.1) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.1) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.1) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.1) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.1) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.1) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.1) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.1) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.1) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.1) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.1) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.1) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.1) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.1) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.7) lib/rack/method_override.rb:28:in `call'
+rack (3.1.7) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.7) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (7.2.1) lib/rails/engine.rb:535:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2024-09-17 09:30:50 +0700
+  
+ActiveRecord::DuplicateMigrationNameError (
+
+Multiple migrations have the name CreateUsers.
+
+):
+  
+activerecord (7.2.1) lib/active_record/migration.rb:1562:in `validate'
+activerecord (7.2.1) lib/active_record/migration.rb:1432:in `initialize'
+activerecord (7.2.1) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.1) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.1) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.1) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.1) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.1) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.1) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.1) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.1) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.1) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.1) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.1) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.1) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.1) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.7) lib/rack/method_override.rb:28:in `call'
+rack (3.1.7) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.7) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (7.2.1) lib/rails/engine.rb:535:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMicroposts (20240911065816)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "microposts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" text, "user_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240911065816') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2024-09-17 09:34:06 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 482.5ms | GC: 32.9ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 9.4ms | GC: 0.1ms)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 494.2ms | GC: 33.0ms)
+Completed 200 OK in 502ms (Views: 496.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 33.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2024-09-17 09:34:07 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/login" for 127.0.0.1 at 2024-09-17 09:40:01 +0700
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.7ms | GC: 0.9ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 20.0ms | GC: 13.1ms)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | GC: 0.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | GC: 17.3ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 17.3ms)
+
+
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/login" for 127.0.0.1 at 2024-09-17 09:47:37 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 6.1ms | GC: 0.2ms)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | GC: 0.2ms)
+Completed 200 OK in 21ms (Views: 10.5ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-09-17 09:57:12 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 5.8ms | GC: 0.2ms)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | GC: 0.3ms)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-09-17 09:57:22 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 6.3ms | GC: 0.5ms)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | GC: 0.5ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-09-17 09:57:23 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 9.0ms | GC: 0.0ms)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-17 09:57:31 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.0ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 11.8ms | GC: 4.9ms)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | GC: 4.9ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-09-17 09:57:39 +0700
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 7.2ms | GC: 0.6ms)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | GC: 0.6ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-09-17 10:02:17 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.8ms | GC: 3.7ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 6.6ms | GC: 0.5ms)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | GC: 4.5ms)
+Completed 200 OK in 240ms (Views: 14.9ms | ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 4.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-09-17 10:02:26 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 5.7ms | GC: 0.4ms)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | GC: 0.4ms)
+Completed 200 OK in 227ms (Views: 7.5ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-09-17 10:02:45 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 5.8ms | GC: 0.5ms)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | GC: 0.5ms)
+Completed 200 OK in 237ms (Views: 7.5ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/login" for 127.0.0.1 at 2024-09-17 10:04:52 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://127.0.0.1:3000/users/1
+Completed 302 Found in 217ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2024-09-17 10:04:52 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 9.3ms | GC: 3.9ms)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | GC: 3.9ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 3.9ms)
+
+
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/users/1" for 127.0.0.1 at 2024-09-17 11:06:31 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 32e82f011ef3adee051d
+Version: webpack 4.47.0
+Time: 877ms
+Built at: 09/17/2024 11:06:32 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a208481c111187ab269c.js    309 KiB  application  [emitted] [immutable]  application
+js/application-a208481c111187ab269c.js.map    363 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a208481c111187ab269c.js js/application-a208481c111187ab269c.js.map
+[./app/javascript/packs/application.js] 162 bytes {application} [built]
+    + 1 hidden module
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '@rails/activestorage' in '/home/lochuynh/environment/hello_app/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 3:0-31
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '@rails/ujs' in '/home/lochuynh/environment/hello_app/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 1:0-21
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap' in '/home/lochuynh/environment/hello_app/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 6:0-19
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'channels' in '/home/lochuynh/environment/hello_app/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 4:0-19
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'turbolinks' in '/home/lochuynh/environment/hello_app/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 2:0-21
+
+
+warning package.json: No license field
+
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 1859.6ms | GC: 0.0ms)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1861.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 1867ms (ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `logged_in?' for an instance of #<Class:0x00007d06a6fdd2a0>):
+
+Causes:
+NoMethodError (undefined method `logged_in?' for an instance of #<Class:0x00007d06a6fdd2a0>)
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/views/layouts/_header.html.erb:8
+app/views/layouts/application.html.erb:5
+Started GET "/" for 127.0.0.1 at 2024-09-17 11:09:53 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 5e3bc2f2cb1e03603f63
+Version: webpack 4.47.0
+Time: 403ms
+Built at: 09/17/2024 11:09:54 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-dd4c780c92834cf64d87.js    309 KiB  application  [emitted] [immutable]  application
+js/application-dd4c780c92834cf64d87.js.map    363 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-dd4c780c92834cf64d87.js js/application-dd4c780c92834cf64d87.js.map
+[./app/javascript/packs/application.js] 131 bytes {application} [built]
+    + 1 hidden module
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '@rails/activestorage' in '/home/lochuynh/environment/hello_app/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 2:0-31
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '@rails/ujs' in '/home/lochuynh/environment/hello_app/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 1:0-21
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap' in '/home/lochuynh/environment/hello_app/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 5:0-19
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'channels' in '/home/lochuynh/environment/hello_app/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 3:0-19
+
+
+warning package.json: No license field
+
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 1130.0ms | GC: 11.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 26.6ms | GC: 19.5ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1159.2ms | GC: 30.7ms)
+Completed 200 OK in 1161ms (Views: 1157.6ms | ActiveRecord: 2.3ms (1 query, 0 cached) | GC: 30.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-17 11:12:29 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.4ms | GC: 0.0ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 19bd594f41ef9fb30519
+Version: webpack 4.47.0
+Time: 501ms
+Built at: 09/17/2024 11:12:30 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-35a8b97fa92f3faa9670.js    310 KiB  application  [emitted] [immutable]  application
+js/application-35a8b97fa92f3faa9670.js.map    363 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-35a8b97fa92f3faa9670.js js/application-35a8b97fa92f3faa9670.js.map
+[./app/javascript/packs/application.js] 183 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 474 bytes {application} [built]
+    + 1 hidden module
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '@rails/activestorage' in '/home/lochuynh/environment/hello_app/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 5:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '@rails/ujs' in '/home/lochuynh/environment/hello_app/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 4:0-20
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap' in '/home/lochuynh/environment/hello_app/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 3:0-19
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'channels' in '/home/lochuynh/environment/hello_app/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 6:0-18
+
+
+warning package.json: No license field
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 1245.4ms | GC: 0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1248.9ms | GC: 0.9ms)
+Completed 200 OK in 1249ms (Views: 1249.1ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-17 11:15:51 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.5ms | GC: 0.0ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 5e3bc2f2cb1e03603f63
+Version: webpack 4.47.0
+Time: 362ms
+Built at: 09/17/2024 11:15:52 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-dd4c780c92834cf64d87.js    309 KiB  application  [emitted] [immutable]  application
+js/application-dd4c780c92834cf64d87.js.map    363 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-dd4c780c92834cf64d87.js js/application-dd4c780c92834cf64d87.js.map
+[./app/javascript/packs/application.js] 131 bytes {application} [built]
+    + 1 hidden module
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '@rails/activestorage' in '/home/lochuynh/environment/hello_app/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 2:0-31
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '@rails/ujs' in '/home/lochuynh/environment/hello_app/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 1:0-21
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap' in '/home/lochuynh/environment/hello_app/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 5:0-19
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'channels' in '/home/lochuynh/environment/hello_app/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 3:0-19
+
+
+warning package.json: No license field
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 1123.5ms | GC: 0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.7ms | GC: 0.6ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1127.8ms | GC: 0.9ms)
+Completed 200 OK in 1129ms (Views: 1128.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-17 11:18:31 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 74.0ms | GC: 23.3ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: ed2701c5e3e62a5edce6
+Version: webpack 4.47.0
+Time: 450ms
+Built at: 09/17/2024 11:18:33 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-fe9d7e0e7979ddeae804.js    311 KiB  application  [emitted] [immutable]  application
+js/application-fe9d7e0e7979ddeae804.js.map    363 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-fe9d7e0e7979ddeae804.js js/application-fe9d7e0e7979ddeae804.js.map
+[./app/javascript/application.js] 290 bytes {application} [built]
+[./app/javascript/controllers/application.js] 216 bytes {application} [built]
+[./app/javascript/controllers/index.js] 274 bytes {application} [built]
+    + 1 hidden module
+
+ERROR in ./app/javascript/controllers/application.js
+Module not found: Error: Can't resolve '@hotwired/stimulus' in '/home/lochuynh/environment/hello_app/app/javascript/controllers'
+ @ ./app/javascript/controllers/application.js 1:0-49 2:18-29
+ @ ./app/javascript/controllers/index.js
+ @ ./app/javascript/application.js
+
+ERROR in ./app/javascript/controllers/index.js
+Module not found: Error: Can't resolve '@hotwired/stimulus-loading' in '/home/lochuynh/environment/hello_app/app/javascript/controllers'
+ @ ./app/javascript/controllers/index.js 3:0-70 4:0-24
+ @ ./app/javascript/application.js
+
+ERROR in ./app/javascript/application.js
+Module not found: Error: Can't resolve '@hotwired/turbo-rails' in '/home/lochuynh/environment/hello_app/app/javascript'
+ @ ./app/javascript/application.js 2:0-31
+
+ERROR in ./app/javascript/application.js
+Module not found: Error: Can't resolve '@rails/activestorage' in '/home/lochuynh/environment/hello_app/app/javascript'
+ @ ./app/javascript/application.js 6:0-31
+
+ERROR in ./app/javascript/application.js
+Module not found: Error: Can't resolve '@rails/ujs' in '/home/lochuynh/environment/hello_app/app/javascript'
+ @ ./app/javascript/application.js 5:0-21
+
+ERROR in ./app/javascript/application.js
+Module not found: Error: Can't resolve 'bootstrap' in '/home/lochuynh/environment/hello_app/app/javascript'
+ @ ./app/javascript/application.js 4:0-19
+
+ERROR in ./app/javascript/application.js
+Module not found: Error: Can't resolve 'channels' in '/home/lochuynh/environment/hello_app/app/javascript'
+ @ ./app/javascript/application.js 7:0-19
+
+
+warning package.json: No license field
+
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 1190.3ms | GC: 0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 13.2ms | GC: 0.2ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1279.2ms | GC: 23.9ms)
+Completed 200 OK in 1283ms (Views: 1279.8ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 23.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-17 11:24:53 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 69.5ms | GC: 23.4ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: f87231a6cd81ced743f9
+Version: webpack 4.47.0
+Time: 1366ms
+Built at: 09/17/2024 11:24:55 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-cbd0262f767d29c6fd67.js    814 KiB  application  [emitted] [immutable]  application
+js/application-cbd0262f767d29c6fd67.js.map    860 KiB  application  [emitted] [dev]        application
+                             manifest.json  400 bytes               [emitted]              
+Entrypoint application = js/application-cbd0262f767d29c6fd67.js js/application-cbd0262f767d29c6fd67.js.map
+[./app/javascript/application.js] 321 bytes {application} [built]
+[./app/javascript/controllers/application.js] 216 bytes {application} [built]
+[./app/javascript/controllers/index.js] 274 bytes {application} [built]
+    + 111 hidden modules
+
+ERROR in ./app/javascript/controllers/application.js
+Module not found: Error: Can't resolve '@hotwired/stimulus' in '/home/lochuynh/environment/hello_app/app/javascript/controllers'
+ @ ./app/javascript/controllers/application.js 1:0-49 2:18-29
+ @ ./app/javascript/controllers/index.js
+ @ ./app/javascript/application.js
+
+ERROR in ./app/javascript/controllers/index.js
+Module not found: Error: Can't resolve '@hotwired/stimulus-loading' in '/home/lochuynh/environment/hello_app/app/javascript/controllers'
+ @ ./app/javascript/controllers/index.js 3:0-70 4:0-24
+ @ ./app/javascript/application.js
+
+ERROR in ./app/javascript/application.js
+Module not found: Error: Can't resolve '@hotwired/turbo-rails' in '/home/lochuynh/environment/hello_app/app/javascript'
+ @ ./app/javascript/application.js 2:0-31
+
+ERROR in ./app/javascript/application.js
+Module not found: Error: Can't resolve 'bootstrap' in '/home/lochuynh/environment/hello_app/app/javascript'
+ @ ./app/javascript/application.js 4:0-19
+
+ERROR in ./app/javascript/application.js
+Module not found: Error: Can't resolve 'channels' in '/home/lochuynh/environment/hello_app/app/javascript'
+ @ ./app/javascript/application.js 8:0-19
+
+
+warning package.json: No license field
+
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 2103.9ms | GC: 0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 44.3ms | GC: 28.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | GC: 0.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 2220.3ms | GC: 52.3ms)
+Completed 200 OK in 2224ms (Views: 2220.0ms | ActiveRecord: 1.7ms (1 query, 0 cached) | GC: 52.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-17 11:26:18 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.4ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 9.0ms | GC: 0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | GC: 0.3ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | GC: 0.5ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-17 11:43:03 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 69.5ms | GC: 25.5ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/lochuynh/environment/hello_app/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 1a8efb23bfcc0e566598
+Version: webpack 4.47.0
+Time: 888ms
+Built at: 09/17/2024 11:43:05 AM
+                                                  Asset      Size       Chunks                         Chunk Names
+                           css/application-9e62df74.css   113 KiB  application  [emitted] [immutable]  application
+                       css/application-9e62df74.css.map   149 KiB  application  [emitted] [dev]        application
+                 js/application-228a1a0c6710a037d2d0.js   388 KiB  application  [emitted] [immutable]  application
+             js/application-228a1a0c6710a037d2d0.js.map   447 KiB  application  [emitted] [dev]        application
+                                          manifest.json  1.19 KiB               [emitted]              
+  media/fonts/glyphicons-halflings-regular-060b2710.svg   106 KiB               [emitted]              
+  media/fonts/glyphicons-halflings-regular-4692b9ec.ttf  44.3 KiB               [emitted]              
+  media/fonts/glyphicons-halflings-regular-5be1347c.eot  19.7 KiB               [emitted]              
+ media/fonts/glyphicons-halflings-regular-82b1212e.woff  22.9 KiB               [emitted]              
+media/fonts/glyphicons-halflings-regular-be810be3.woff2  17.6 KiB               [emitted]              
+Entrypoint application = css/application-9e62df74.css js/application-228a1a0c6710a037d2d0.js css/application-9e62df74.css.map js/application-228a1a0c6710a037d2d0.js.map
+[./app/javascript/packs/application.js] 123 bytes {application} [built]
+    + 16 hidden modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/postcss-loader/src/index.js??ref--5-2!node_modules/bootstrap/dist/css/bootstrap.min.css:
+    Entrypoint mini-css-extract-plugin = *
+       8 modules
+
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 1658.8ms | GC: 0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 44.8ms | GC: 28.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1775.6ms | GC: 54.0ms)
+Completed 200 OK in 1780ms (Views: 1774.8ms | ActiveRecord: 2.3ms (1 query, 0 cached) | GC: 54.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2024-09-17 11:43:45 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 6.6ms | GC: 0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | GC: 0.8ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2024-09-17 11:43:48 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 6.6ms | GC: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-17 11:43:49 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.9ms | GC: 0.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_head.html.erb (Duration: 7.0ms | GC: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
