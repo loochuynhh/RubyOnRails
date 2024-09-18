@@ -23,7 +23,7 @@ gem 'webpacker'
 # gem "kredis"
 gem 'sassc-rails'
 
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.4.1'
 
 gem 'htmlbeautifier'
 
@@ -34,6 +34,10 @@ gem 'bcrypt'
 gem 'byebug', group: [:development, :test]
 
 gem 'config'
+
+gem 'rails-ujs'
+
+gem 'importmap-rails'
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
