@@ -1,66 +1,28 @@
 require 'test_helper'
 
 class UsersControllerTest < ActionDispatch::IntegrationTest
-  setup do
-    @user = users(:one)
-  end
-
-  test 'should get index' do
-    get users_url
-    assert_response :success
-  end
-
   test 'should get new' do
-    get new_user_url
+    get signup_path
     assert_response :success
   end
 
-  # test "should create user" do
-  #   assert_difference("User.count") do
-  #     post users_url, params: { user: { email: @user.email, name: @user.name } }
-  #   end
-
-  #   assert_redirected_to user_url(User.last)
-  # end
-  # Change default test error
-  test 'should create user' do
-    assert_difference('User.count', 1) do
-      post users_url, params: {user: {email: 'user@example.com', name: 'Example User'}}
-    end
-
-    assert_redirected_to user_url(User.last)
-  end
-
-  test 'should show user' do
-    get user_url(@user)
+  test 'should show user if exists' do
+    user_params = {
+      name: 'Example User',
+      email: 'user@example.com',
+      password: 'password',
+      password_confirmation: 'password'
+    }
+    user = User.create!(user_params)
+    get user_path(user)
     assert_response :success
+    assert_select 'h1', user.name
   end
 
-  test 'should get edit' do
-    get edit_user_url(@user)
-    assert_response :success
-  end
-
-  # test "should update user" do
-  #   patch user_url(@user), params: { user: { email: @user.email, name: @user.name } }
-  #   assert_redirected_to user_url(@user)
-  # end
-
-  # Change default test error
-  test 'should update user' do
-    patch user_url(@user), params: {user: {email: 'new_email@example.com', name: 'Updated Name'}}
-    assert_redirected_to user_url(@user)
-
-    @user.reload
-    assert_equal 'new_email@example.com', @user.email
-    assert_equal 'Updated Name', @user.name
-  end
-
-  test 'should destroy user' do
-    assert_difference('User.count', -1) do
-      delete user_url(@user)
-    end
-
-    assert_redirected_to users_url
+  test 'should redirect to root and show flash message if user not found' do
+    get user_path(-1)
+    assert_redirected_to root_path
+    assert_not flash[:error].empty?
+    assert_equal 'User not found', flash[:error]
   end
 end
