@@ -2,7 +2,7 @@
 
 default: &default
   source_path: app/javascript
-  source_entry_path: packs
+  source_entry_path: app/javascript
   public_root_path: public
   public_output_path: packs
   cache_path: tmp/cache/webpacker
@@ -10,7 +10,7 @@ default: &default
 
   # Additional paths webpack should lookup modules
   # ['app/assets', 'engine/foo/app/assets']
-  additional_paths: []
+  additional_paths: [app/javascript/packs]
 
   # Reload manifest.json on all requests so we reload latest compiled packs
   cache_manifest: false
@@ -51,6 +51,7 @@ development:
   <<: *default
   compile: true
 
+  extract_css: true
   # Reference: https://webpack.js.org/configuration/dev-server/
   dev_server:
     https: false
@@ -84,6 +85,7 @@ production:
 
   # Production depends on precompilation of packs prior to booting for performance.
   compile: true
+
 
   # Extract and emit a css file
   extract_css: true
