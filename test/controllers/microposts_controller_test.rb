@@ -2,7 +2,8 @@ require 'test_helper'
 
 class MicropostsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @micropost = microposts(:one)
+    @user = users(:michael)
+    @micropost = Micropost.create(content: 'This is a test micropost.', user_id: @user.id)
   end
 
   test 'should get index' do
