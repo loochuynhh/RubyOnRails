@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :microposts
   resources :users
+  resources :microposts
 
   root 'static_pages#home'
   get '/help', to: 'static_pages#help'
