@@ -1,4 +1,4 @@
-class DropMicroposts < ActiveRecord::Migration[7.0]
+class DropMicroposts < ActiveRecord::Migration[7.2]
   def up
     drop_table :microposts if table_exists?(:microposts)
   end

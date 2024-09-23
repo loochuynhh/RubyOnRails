@@ -66,6 +66,15 @@ module.exports = function(api) {
         }
       ],
       [
+        '@babel/plugin-proposal-optional-chaining' 
+      ],
+      [
+        '@babel/plugin-proposal-nullish-coalescing-operator'
+      ],
+      [
+        '@babel/plugin-proposal-logical-assignment-operators'
+      ],
+      [
         '@babel/plugin-transform-runtime',
         {
           helpers: false
