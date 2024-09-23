@@ -5,13 +5,13 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   def index
-    @users = User.paginate(page: params[:page], per_page: Settings.defaults.users_per_page)
+    @users = User.where(activated: true).paginate(page: params[:page], per_page: Settings.defaults.users_per_page)
   end
 
   def create
     @user = User.new(user_params)
     if @user.save
-      UserMailer.account_activation(@user).deliver_now
+      @user.send_activation_email
       flash[:info] = 'Please check your email to activate your account.'
       redirect_to root_path
     else
@@ -25,6 +25,10 @@ class UsersController < ApplicationController
   end
 
   def show
+    unless @user.activated?
+      flash[:warning] = 'This account is not activated.'
+      redirect_to root_url and return
+    end
   end
 
   def edit
