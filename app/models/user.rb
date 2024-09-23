@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  scope :activated, -> { where(activated: true) }
+
   attr_accessor :remember_token, :activation_token
 
   has_many :microposts

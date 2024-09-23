@@ -39,9 +39,6 @@ gem 'will_paginate', '~> 3.3'
 
 gem 'bootstrap-will_paginate', '~> 1.0'
 
-gem 'dotenv-rails', groups: [:development, :test]
-
-gem 'letter_opener', group: :development
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
@@ -62,11 +59,13 @@ group :development, :test do
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'faker', '~> 2.19'
+  gem 'dotenv-rails'
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
+  gem 'letter_opener'
 end
 
 group :test do

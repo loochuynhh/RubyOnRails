@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   def index
-    @users = User.where(activated: true).paginate(page: params[:page], per_page: Settings.defaults.users_per_page)
+    @users = User.activated.paginate(page: params[:page], per_page: Settings.defaults.users_per_page)
   end
 
   def create
@@ -25,10 +25,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    unless @user.activated?
-      flash[:warning] = 'This account is not activated.'
-      redirect_to root_url and return
-    end
+    redirect_to(root_url, flash: {warning: 'This account is not activated.'}) unless @user.activated?
   end
 
   def edit
