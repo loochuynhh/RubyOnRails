@@ -35,8 +35,6 @@ gem 'config'
 
 gem 'rails-ujs'
 
-gem 'faker', '~> 2.19'
-
 gem 'will_paginate', '~> 3.3'
 
 gem 'bootstrap-will_paginate', '~> 1.0'
@@ -60,6 +58,7 @@ group :development, :test do
   gem 'rubocop-packaging', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
+  gem 'faker', '~> 2.19'
 end
 
 group :development do

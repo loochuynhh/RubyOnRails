@@ -2,9 +2,10 @@ class UsersController < ApplicationController
   before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   def index
-    @users = User.paginate(page: params[:page], per_page: 5)
+    @users = User.paginate(page: params[:page], per_page: Settings.defaults.users_per_page)
   end
 
   def create
@@ -15,8 +16,6 @@ class UsersController < ApplicationController
       redirect_to @user
     else
       flash.now[:error] = 'There was an error creating your account. Please check the form and try again.'
-      # Is this flash command line necessary?
-      # when rendering 'new' there is already a detailed error_message form! And flash is also unclear and makes the interface ugly
       render_err('new')
     end
   end
@@ -26,32 +25,22 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by(id: params[:id])
-    if @user.nil?
-      flash[:error] = 'User not found'
-      redirect_to root_path
-    end
   end
 
   def edit
-    @user = User.find(params[:id])
   end
 
   def update
-    @user = User.find(params[:id])
     if @user.update(user_params)
       flash[:success] = 'Profile updated'
       redirect_to @user
     else
       flash.now[:error] = 'There were errors updating your profile'
-      # Is this flash command line necessary?
-      # when rendering 'new' there is already a detailed error_message form! And flash is also unclear and makes the interface ugly
       render_err('edit')
     end
   end
 
   def destroy
-    @user = User.find_by(id: params[:id])
     if @user
       @user.destroy
       flash[:success] = 'User deleted'
@@ -62,6 +51,14 @@ class UsersController < ApplicationController
   end
 
   private
+
+  def set_user
+    @user = User.find_by(id: params[:id])
+    if @user.nil?
+      flash[:error] = 'User not found'
+      redirect_to root_path
+    end
+  end
 
   def user_params
     params.require(:user).permit(:name, :email, :password, :password_confirmation)

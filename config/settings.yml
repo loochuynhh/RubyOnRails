@@ -1,6 +1,7 @@
 defaults: &defaults
   small_gravatar_size: 80
   large_gravatar_size: 100
+  users_per_page: 5
 
 development:
   <<: *defaults
