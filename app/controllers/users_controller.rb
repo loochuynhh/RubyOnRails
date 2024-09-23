@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   def index
     @users = User.paginate(page: params[:page], per_page: Settings.defaults.users_per_page)
@@ -65,15 +65,14 @@ class UsersController < ApplicationController
   end
 
   def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = 'Please log in.'
-      redirect_to login_url
-    end
+    return if logged_in?
+
+    store_location
+    flash[:danger] = 'Please log in.'
+    redirect_to login_url
   end
 
   def correct_user
-    @user = User.find(params[:id])
     redirect_to(root_url) unless current_user?(@user)
   end
 
