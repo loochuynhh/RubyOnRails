@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   get 'password_resets/new'
   get 'password_resets/edit'
 
-  resources :microposts
   resources :users
   resources :microposts, only: [:create, :destroy]
   resources :account_activations, only: [:edit]
