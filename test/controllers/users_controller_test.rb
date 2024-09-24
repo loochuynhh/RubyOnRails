@@ -4,6 +4,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   def setup
     @user = users(:michael)
     @other_user = users(:archer)
+    @not_activated_user = users(:malory)
   end
 
   test 'should get new' do
@@ -16,6 +17,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
       name: 'Example User',
       email: 'user@example.com',
       password: 'password',
+      activated: true,
       password_confirmation: 'password'
     }
     user = User.create!(user_params)
@@ -102,5 +104,26 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
       delete user_path(@user)
     end
     assert_redirected_to root_url
+  end
+
+  test 'user show should only show activated users' do
+    log_in_as(@user)
+
+    get user_path(@user)
+    assert_template 'users/show'
+
+    get user_path(@not_activated_user)
+    assert_redirected_to root_url
+    assert_not flash.empty?
+  end
+
+  test 'user index should only show activated users' do
+    log_in_as(@user)
+    get users_path
+    assert_template 'users/index'
+
+    assigns(:users).each do |user|
+      assert_select 'a[href=?]', user_path(user), text: user.name, count: user.activated? ? 1 : 0
+    end
   end
 end
