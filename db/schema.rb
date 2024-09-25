@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_09_25_015013) do
+ActiveRecord::Schema[7.2].define(version: 2024_09_25_052750) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -40,12 +40,11 @@ ActiveRecord::Schema[7.2].define(version: 2024_09_25_015013) do
   end
 
   create_table "microposts", force: :cascade do |t|
-    t.text "content"
     t.integer "user_id", null: false
+    t.text "content", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id", "created_at"], name: "index_microposts_on_user_id_and_created_at"
-    t.index ["user_id"], name: "index_microposts_on_user_id"
   end
 
   create_table "relationships", force: :cascade do |t|
@@ -76,5 +75,4 @@ ActiveRecord::Schema[7.2].define(version: 2024_09_25_015013) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "microposts", "users"
 end
