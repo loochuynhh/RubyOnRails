@@ -1,11 +1,9 @@
 class CreateMicropostsWithUserIdAndContent < ActiveRecord::Migration[7.2]
   def change
     create_table :microposts do |t|
-      t.text :content
-      t.references :user, null: false, foreign_key: true
-
+      t.integer :user_id, null: false
+      t.text :content, null: false
       t.timestamps
     end
-    add_index :microposts, [:user_id, :created_at]
   end
 end
