@@ -16,6 +16,7 @@ module HelloApp
     # Common ones are `templates`, `generators`, or `middleware`, for example.
     config.autoload_lib(ignore: %w[assets tasks])
     config.active_storage.service = :local
+    config.action_view.embed_authenticity_token_in_remote_forms = true
     # config.active_storage.variant_processor = :vips
     # Configuration for the application, engines, and railties goes here.
     #
