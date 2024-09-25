@@ -26,6 +26,7 @@ class UsersController < ApplicationController
 
   def show
     redirect_to(root_url, flash: {warning: 'This account is not activated.'}) unless @user.activated?
+    @microposts = @user.microposts.paginate(page: params[:page], per_page: Settings.defaults.users_per_page)
   end
 
   def edit

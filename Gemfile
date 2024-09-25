@@ -39,6 +39,11 @@ gem 'will_paginate', '~> 3.3'
 
 gem 'bootstrap-will_paginate', '~> 1.0'
 
+gem 'active_storage_validations', '0.8.2'
+
+gem 'image_processing', '~> 1.9'
+
+gem 'mini_magick', '4.9.5'
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
